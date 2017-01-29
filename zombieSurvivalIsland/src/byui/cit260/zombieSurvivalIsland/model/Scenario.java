@@ -13,16 +13,15 @@ import java.util.Objects;
  * @author Javier
  */
 public class Scenario implements Serializable {
-    
     private String name;
-        private String description;
-            private String blockedLocation;
+    private String description;
+    private String blockedLocation;
 
     public Scenario() {
     }
+    
+    
 
-            
-            
     public String getName() {
         return name;
     }
@@ -48,20 +47,19 @@ public class Scenario implements Serializable {
     }
 
     @Override
-    public int hashCode() {
-        int hash = 5;
-        hash = 53 * hash + Objects.hashCode(this.name);
-        hash = 53 * hash + Objects.hashCode(this.description);
-        hash = 53 * hash + Objects.hashCode(this.blockedLocation);
-        return hash;
-    }
-
-    @Override
     public String toString() {
         return "Scenario{" + "name=" + name + ", description=" + description + ", blockedLocation=" + blockedLocation + '}';
     }
 
-    
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 71 * hash + Objects.hashCode(this.name);
+        hash = 71 * hash + Objects.hashCode(this.description);
+        hash = 71 * hash + Objects.hashCode(this.blockedLocation);
+        return hash;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -85,9 +83,7 @@ public class Scenario implements Serializable {
         }
         return true;
     }
-
     
     
-
-    
+      
 }
