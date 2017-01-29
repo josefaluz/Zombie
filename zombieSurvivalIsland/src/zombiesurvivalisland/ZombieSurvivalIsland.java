@@ -6,6 +6,7 @@
 package zombiesurvivalisland;
 
 import byui.cit260.zombieSurvivalIsland.model.Game;
+import byui.cit260.zombieSurvivalIsland.model.Item;
 import byui.cit260.zombieSurvivalIsland.model.Maps;
 import byui.cit260.zombieSurvivalIsland.model.Player;
 import byui.cit260.zombieSurvivalIsland.model.Ship;
@@ -56,6 +57,18 @@ public class ZombieSurvivalIsland {
       String shipInfo = shipOne.toString();
       System.out.println(shipInfo);
       
-    }
     
+      
+      Item itemOne = new Item();
+      itemOne.setInventoryType("tool");
+      itemOne.setQuantity(10);
+      itemOne.setRequiredAmount(15);
+      
+      String itemInfo = itemOne.toString();
+      System.out.println(itemInfo);
+      
+      
+     
+    }
+
 }

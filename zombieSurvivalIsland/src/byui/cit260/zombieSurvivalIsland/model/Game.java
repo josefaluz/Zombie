@@ -59,6 +59,7 @@ public class Game implements Serializable {
         return hash;
     }
 
+    
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
