@@ -8,6 +8,7 @@ package zombiesurvivalisland;
 import byui.cit260.zombieSurvivalIsland.model.Game;
 import byui.cit260.zombieSurvivalIsland.model.Item;
 import byui.cit260.zombieSurvivalIsland.model.Maps;
+import byui.cit260.zombieSurvivalIsland.model.Personage;
 import byui.cit260.zombieSurvivalIsland.model.Player;
 import byui.cit260.zombieSurvivalIsland.model.Ship;
 
@@ -67,8 +68,13 @@ public class ZombieSurvivalIsland {
       String itemInfo = itemOne.toString();
       System.out.println(itemInfo);
       
+      Personage personageOne = new Personage();
+      personageOne.setName("GokuSS4");
+      personageOne.setCharacteristics("high");
+      String personageInfo = personageOne.toString();
+      System.out.println(personageInfo);
+      
       
      
     }
-
 }

@@ -12,12 +12,12 @@ import java.util.Objects;
  *
  * @author FamiliaLezcano
  */
-public class Character implements Serializable{
+public class Personage implements Serializable {
     
     private String name;
     private String characteristics;
 
-    public Character() {
+    public Personage() {
     }
 
     
@@ -40,16 +40,15 @@ public class Character implements Serializable{
 
     @Override
     public int hashCode() {
-             
-        int hash = 3;
-        hash = 83 * hash + Objects.hashCode(this.name);
-        hash = 83 * hash + Objects.hashCode(this.characteristics);
+        int hash = 7;
+        hash = 13 * hash + Objects.hashCode(this.name);
+        hash = 13 * hash + Objects.hashCode(this.characteristics);
         return hash;
     }
 
     @Override
     public String toString() {
-        return "Character{" + "name=" + name + ", characteristics=" + characteristics + '}';
+        return "Personage{" + "name=" + name + ", characteristics=" + characteristics + '}';
     }
 
     
@@ -65,10 +64,10 @@ public class Character implements Serializable{
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Character other = (Character) obj;
+        final Personage other = (Personage) obj;
         return true;
     }
-
+    
     
     
     
