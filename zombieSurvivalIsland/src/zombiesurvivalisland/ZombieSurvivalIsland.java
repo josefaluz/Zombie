@@ -5,6 +5,7 @@
  */
 package zombiesurvivalisland;
 
+import byui.cit260.zombieSurvivalIsland.model.Scenario;
 import byui.cit260.zombieSurvivalIsland.model.Game;
 import byui.cit260.zombieSurvivalIsland.model.Item;
 import byui.cit260.zombieSurvivalIsland.model.Maps;
@@ -74,7 +75,12 @@ public class ZombieSurvivalIsland {
       String personageInfo = personageOne.toString();
       System.out.println(personageInfo);
       
-      
+     Scenario scenarioOne = new Scenario();
+      scenarioOne.setName("StageOne");
+      scenarioOne.setDescription("info");
+      scenarioOne.setBlockedLocation("area");
+      String scenarioInfo = scenarioOne.toString();
+      System.out.println(scenarioInfo);
      
     }
 }

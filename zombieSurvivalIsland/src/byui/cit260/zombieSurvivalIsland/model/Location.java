@@ -76,10 +76,7 @@ public class Location implements Serializable  {
         if (Double.doubleToLongBits(this.column) != Double.doubleToLongBits(other.column)) {
             return false;
         }
-        if (Double.doubleToLongBits(this.visited) != Double.doubleToLongBits(other.visited)) {
-            return false;
-        }
-        return true;
+        return Double.doubleToLongBits(this.visited) == Double.doubleToLongBits(other.visited);
     }
     
     
