@@ -28,11 +28,62 @@ public class GameControl2 {
         
         
         
+
+    
 byte message=  level;
 
         return message;
     }
+      
+  
+    public String SaveGame(String player){
+     player = "";
+        String location = "My Documents";
+        String specialChars  = ("+ - * = % & # ! ? ^ “ ‘ ~  < > ( ) [ ] { } : ; . ,");
+        if(location != "My Documents"){
+           
+return null;
+        }
+        
+if(player.contains(specialChars)){
+return null;
+}
+String message = player + "your session was saved in " + location;
+return  message;
 
+    }
+    
+    
+    public String initializeMap( String column, int row) {
+        
+       String columns = "abcdefghi";
+       
+       if (!columns.contains(column)){
+               return "-1";
+   }
+       
+       if (row < 1 || row > 11) {
+       
+           return "-1";
+        }
+       
+       String coordinate =  column + row; 
+        return  coordinate;
+       
+   }
+    public String createNewPlayer() {
+       
+     String intro = "You will be: ";
+     String player = "";
+     String specialChar= "*";
+    if(player.contains(specialChar)){
+        return null;
+    }
+     
+    String message = intro +  player;
+   
+   return message;
+}
    
 
 }

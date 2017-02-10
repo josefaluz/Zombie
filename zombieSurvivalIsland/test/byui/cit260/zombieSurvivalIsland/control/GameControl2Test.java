@@ -34,5 +34,51 @@ public class GameControl2Test {
         // TODO review the generated test code and remove the default call to fail.
        
     }
+
+    /**
+     * Test of SaveGame method, of class GameControl2.
+     */
+    @Test
+    public void testSaveGame() {
+        System.out.println("SaveGame");
+        String player = "pablo";
+        GameControl2 instance = new GameControl2();
+        String expResult = "your session was saved in My Documents";
+        String result = instance.SaveGame(player);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        
+    }
+
+    /**
+     * Test of initializeMap method, of class GameControl2.
+     */
+    @Test
+    public void testInitializeMap() {
+        System.out.println("initializeMap");
+        String column = "a";
+        int row = 5;
+        GameControl2 instance = new GameControl2();
+        String expResult = "a5";
+        String result = instance.initializeMap(column, row);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        
+    }
+
+    /**
+     * Test of createNewPlayer method, of class GameControl2.
+     */
+    @Test
+    public void testCreateNewPlayer() {
+        System.out.println("createNewPlayer");
+        GameControl2 instance = new GameControl2();
+        String player = "javier";
+        String expResult = "You will be: ";
+        String result = instance.createNewPlayer();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        
+    }
     
 }
