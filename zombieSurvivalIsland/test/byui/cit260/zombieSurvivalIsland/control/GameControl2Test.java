@@ -13,6 +13,8 @@ import static org.junit.Assert.*;
  * @author FamiliaLezcano
  */
 public class GameControl2Test {
+
+    private int c;
     
     public GameControl2Test() {
     }
@@ -34,5 +36,27 @@ public class GameControl2Test {
         // TODO review the generated test code and remove the default call to fail.
        
     }
+
+    /**
+     * Test of initializeMap method, of class GameControl2.
+     */
+    @Test
+    public void testInitializeMap() {
+        System.out.println("initializeMap");
+        String column = "b";
+        int row = 3;
+        GameControl2 instance = new GameControl2();
+        String expResult = "b3";
+        String result = instance.initializeMap(column, row);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        
+    }
+
+    /**
+     * Test of initializeMap method, of class GameControl2.
+     */
+    
+    
     
 }
