@@ -33,23 +33,7 @@ byte message=  level;
         return message;
     }
 
-   public String initializeMap( String column, int row) {
-        
-       String columns = "abcdefghi";
-       
-       if (!columns.contains(column)){
-               return "-1";
-   }
-       
-       if (row < 1 || row > 11) {
-       
-           return "-1";
-        }
-       
-       String coordinate =  column + row; 
-        return  coordinate;
-       
-   }
+   
 
 }
     
